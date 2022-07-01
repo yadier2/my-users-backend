@@ -13,7 +13,7 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 app.use(express.json());
-const whitelist = ["http://localhost:8080"];
+const whitelist = ["http://localhost:8080", "http://localhost:3000"];
 
 const options = {
   origin: (origin, callback) => {
